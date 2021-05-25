@@ -1,2 +1,5 @@
 /* FOOTER */
 /* ***** */
+footer{
+    background: var(--footer);
+}
