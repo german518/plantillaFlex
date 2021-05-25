@@ -1,2 +1,50 @@
 /* LAYOUT */
 /* ***** */
+
+.wrapper{
+    max-inline-size: 98vw;
+    height: 98vh;
+    padding:6px;
+    margin: 8px auto;
+    border: 2px solid #000;
+    display:grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px 100px auto 50px;
+    grid-template-areas: 
+    " header header header"
+     "section section section "
+     "content content sidebar"
+     "footer footer footer"
+     ;
+     gap: 10px; 
+}
+
+.wrapper p{
+    color: white;
+    font: bold 16px sans-serif ;
+    padding-inline-start: 8px ;
+    text-transform: uppercase;
+}
+
+header{
+    grid-area: header;
+    }
+
+section{
+    grid-area: section;
+    background: var(--section);
+}
+
+main{
+    grid-area: content;
+    background: var(--main);
+}
+article{
+    grid-area: sidebar;
+    background: var(--article);
+}
+footer{
+    grid-area: footer;
+    
+} 
