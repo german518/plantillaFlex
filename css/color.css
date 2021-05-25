@@ -3,5 +3,9 @@
 
 /* Variables */
 :root{
-
+--header: #01a2ff;
+--section: #be0a0a;
+--main:#03611b;
+--article: #610bc4;
+--footer: #5a5757;
 }
